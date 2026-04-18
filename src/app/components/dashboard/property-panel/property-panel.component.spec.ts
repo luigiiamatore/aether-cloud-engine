@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PropertyPanel } from './property-panel';
+import { PropertyPanelComponent } from './property-panel.component';
 
-describe('PropertyPanel', () => {
-  let component: PropertyPanel;
-  let fixture: ComponentFixture<PropertyPanel>;
+describe('PropertyPanelComponent', () => {
+  let component: PropertyPanelComponent;
+  let fixture: ComponentFixture<PropertyPanelComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PropertyPanel],
+      imports: [PropertyPanelComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(PropertyPanel);
+    fixture = TestBed.createComponent(PropertyPanelComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

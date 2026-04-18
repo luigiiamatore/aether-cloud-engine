@@ -1,0 +1,9 @@
+<section class="canvas-area">
+    @for (node of nodes(); track node.id) {
+        <div class="node-preview">
+            {{ node.name }} ({{ node.region }})
+        </div>
+    } @empty {
+        <p>No nodes found in the infrastructure.</p>
+    }
+</section>
