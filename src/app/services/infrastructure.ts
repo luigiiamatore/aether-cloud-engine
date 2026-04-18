@@ -6,7 +6,7 @@ import { CloudNode } from '../models/infrastructure.model';
 @Injectable({
   providedIn: 'root',
 })
-export class InfrastructureService {
+export class Infrastructure {
   nodes = signal<CloudNode[]>(MOCK_CLOUD_NODES);
 
   addNode(node: CloudNode) {
